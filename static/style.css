@@ -1,0 +1,172 @@
+/* style.css */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+.container {
+    background: #000000;
+    padding: 20px 40px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    max-width: 600px;
+    width: 100%;
+    margin-top: 20px;
+    box-sizing: border-box;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.creator-info {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.rank-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input {
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #555;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+h2 {
+    margin-top: 20px;
+}
+
+.error {
+    color: red;
+    margin-top: 20px;
+}
+
+.graph {
+    margin-top: 40px;
+    width: 100%;
+    max-width: 600px;
+}
+
+.graph img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.image-container {
+    margin-top: 40px;
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.image-title {
+    margin-bottom: 20px;
+    border-bottom: 2px solid #fff;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* Mobil cihazlara uyum sağlamak için medya sorguları */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+        margin-top: 10px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .graph img, .image-container img {
+        width: 100%;
+    }
+}
+
+.info-box {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    max-width: 90%;
+    width: 400px;
+}
+
+.info-box-content {
+    position: relative;
+}
+
+.info-box-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.info-box h2 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.info-box p {
+    margin: 10px 0 0;
+}
